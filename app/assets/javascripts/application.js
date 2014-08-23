@@ -15,8 +15,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.turbolinks
-//= require simpleCart.min
 //= require jquery.backstretch.min
+//= require simpleCart.min
 //= require_tree .
 
 $(document).ready(function(){
