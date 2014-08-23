@@ -24,4 +24,4 @@ $('.collapse').collapse()
 });
 
 
-  $.backstretch("https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg");
+  $.backstretch("https://s3.amazonaws.com/HarrisCitrus/harrisbackground2.jpg");
