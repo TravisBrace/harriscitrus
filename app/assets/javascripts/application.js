@@ -19,9 +19,9 @@
 //= require jquery.backstretch.min
 //= require_tree .
 
-$('.collapse').collapse()
-
 $(document).ready(function(){
-  $.backstretch("https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg");
+$('.collapse').collapse()
 });
 
+
+  $.backstretch("https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg");
