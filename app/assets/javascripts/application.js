@@ -10,13 +10,13 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery.backstretch.min
 //= require bootstrap
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.turbolinks
 //= require simpleCart.min
+//= require jquery.backstretch.min
 //= require_tree .
 
 $('.collapse').collapse()
