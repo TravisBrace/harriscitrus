@@ -5,4 +5,6 @@ class PagesController < ApplicationController
   end
   def trees
   end
+  def bloodorange
+  end
 end

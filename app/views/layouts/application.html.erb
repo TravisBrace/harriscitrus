@@ -3,6 +3,16 @@
 
 <%= render 'layouts/header' %>
 
+<script>
+simpleCart({
+checkout: {
+type: "PayPal",
+email: "TravisBrace@gmail.com"
+}
+});
+</script>
+
+
 <head>
   <title>Harriscitrusredu</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>

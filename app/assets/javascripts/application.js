@@ -10,9 +10,17 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require bootstrap
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
+//= require jquery.backstretch.min
 //= require turbolinks
-
+//= require jquery.turbolinks
+//= require simpleCart.min
 //= require_tree .
+
+$('.collapse').collapse()
+
+$(document).ready(function(){
+  $.backstretch("https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg");
+});
