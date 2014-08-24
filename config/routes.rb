@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get "lemon" => "pages#lemon"
   get "limes" => "pages#limes"
   get "mandarins" => "pages#mandarins"
+  get "pummelo" => "pages#pummelo"
+  get "pummelohybrids" => "pages#pummelo"
+  get "sourorange" => "pages#sourorange"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

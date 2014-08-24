@@ -23,4 +23,10 @@ class PagesController < ApplicationController
   end
   def mandarins
   end
+  def pummelo
+  end
+  def pummelohybrids
+  end
+  def sourorange
+  end
 end
