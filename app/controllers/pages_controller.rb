@@ -29,4 +29,16 @@ class PagesController < ApplicationController
   end
   def sourorange
   end
+  def sweetorangeearly
+  end
+  def sweetorangelate
+  end
+  def sweetorangemid
+  end
+  def tangelo
+  end
+  def tangerines
+  end
+  def shiprate
+  end
 end
