@@ -18,10 +18,10 @@
 //= require simpleCart.min
 //= require_tree .
 
+
+
+
 $(document).ready(function(){
-$('.collapse').collapse()
-
-
 
   $.backstretch("https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg");
 
