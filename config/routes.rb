@@ -4,6 +4,14 @@ Rails.application.routes.draw do
   get "about" => "pages#about"
   get "trees" => "pages#trees"
   get "bloodorange" => "pages#bloodorange"
+  get "citron" => "pages#citron"
+  get "redgrapefruit" => "pages#redgrapefruit"
+  get "whitegrapefruit" => "pages#whitegrapefruit"
+  get "kumquat" => "pages#kumquat"
+  get "kumquathybrids" => "pages#kumquathybrids"
+  get "lemon" => "pages#lemon"
+  get "limes" => "pages#limes"
+  get "mandarins" => "pages#mandarins"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
