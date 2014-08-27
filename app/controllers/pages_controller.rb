@@ -41,4 +41,6 @@ class PagesController < ApplicationController
   end
   def shiprate
   end
+  def cartview
+  end
 end

@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get "tangelo" => "pages#tangelo"
   get "tangerines" => "pages#tangerines"
   get "shiprate" => "pages#shiprate"
+  get "cartview" => "pages#cartview"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
