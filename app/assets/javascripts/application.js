@@ -20,7 +20,7 @@
 
 
 $(function(){
-  $('.opaque').fadeIn();
+  $('.opaque').fadeIn('slow');
 });
 
 $(document).ready(function(){
