@@ -19,7 +19,9 @@
 //= require_tree .
 
 
-
+$(function(){
+  $('.opaque').fadeIn();
+});
 
 $(document).ready(function(){
 
