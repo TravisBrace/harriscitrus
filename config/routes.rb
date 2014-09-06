@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
+  get 'create/tree'
+  resources :trees
+  
+  resources :categories
+  
   root 'pages#home'
 
   get "about" => "pages#about"
-  get "trees" => "pages#trees"
+  
   get "bloodorange" => "pages#bloodorange"
   get "citron" => "pages#citron"
   get "redgrapefruit" => "pages#redgrapefruit"

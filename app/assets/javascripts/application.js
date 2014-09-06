@@ -18,10 +18,9 @@
 //= require simpleCart.min
 //= require_tree .
 
-
 $(function(){
-  $('.opaque').fadeIn('slow');
-});
+  $('.opaque.jumbotron').fadeIn('slow');
+  $('.glass.jumbotron').animate({marginTop:0});});
 
 $(document).ready(function(){
 
