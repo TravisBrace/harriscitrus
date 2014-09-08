@@ -1,4 +1,4 @@
 <h1><%= @category.name%></h1>
 <% @category.trees.each do |tree|%>
-  <%= tree.name %>
+  <%= link_to tree.name.try(:html_safe), tree_path(tree) %>
 <% end %>
