@@ -1,0 +1,10 @@
+<div class="jumbotron glass center">
+<h1><font color="white">Variaties</font></h1>
+</div>
+
+<div class="jumbotron opaque">
+<% Category.all.each do |cat| %>
+<h2><%= link_to cat.name.try(:html_safe), category_path(cat) %></h2>
+<% end %>
+</div>
+
