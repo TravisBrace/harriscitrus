@@ -4,7 +4,7 @@
 
 <div class="jumbotron opaque">
   <% @category.trees.each do |tree|%>
-  <h2><%= link_to tree.name.try(:html_safe), tree_path(tree) %></h2>
+  <h2><%= link_to tree.name.try(:html_safe), category_path %></h2>
   <%= tree.description %>
 <li>BTN</li>
   <% end %>
