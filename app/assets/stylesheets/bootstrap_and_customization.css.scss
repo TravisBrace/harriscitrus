@@ -21,6 +21,13 @@
   margin-top: -100px;
 }
 
+.navbar-search {
+  #user_email, #user_password {
+    float: left;
+   width: calc(40% - 22px);
+  }
+}
+
 .navbar-form.navbar-right:last-child {
   margin-right: 0;
 }
@@ -28,3 +35,16 @@
 .body{
   overflow: hidden;
 }
+
+.strokeme
+{
+  
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;  
+  
+  
+}
+

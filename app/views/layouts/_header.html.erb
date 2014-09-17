@@ -53,25 +53,27 @@
                     </ul>
                 </li>
                 
-         <li><span class="simpleCart_quantity"></span>items - <span class="simpleCart_total">
+      <!--   <li><span class="simpleCart_quantity"></span>items - <span class="simpleCart_total">
          </span>
          
-         <a href="javascript:;" class="simpleCart_checkout">Checkout</a></li>
+         <a href="javascript:;" class="simpleCart_checkout">Checkout</a></li> -->
           
-          <% if user_signed_in? %>
+    
+    <form class="navbar-search pull-right">    
+        <% if user_signed_in? %>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <% else %>    
 <%= form_for(:user, :url => session_path(:user)) do |f| %>
-  <%= f.text_field :email %>
-  <%= f.password_field :password %>
-  <%= f.check_box :remember_me %>
-  <%= f.label :remember_me %>
-  <%= f.submit 'Log in', class: "btn btn-default" %>
+  <%= f.text_field :email, :placeholder => "Email" %>
+  <%= f.password_field :password, :placeholder => "Password" %>
+  <%= f.submit 'Log in', :class => "btn btn-default" %>
   <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default" %>
-  <%= link_to "Forgot your password?", new_password_path(:user) %>
+
+  <!-- <%= link_to "Forgot your password?", new_password_path(:user) %> -->
 <% end %>
 <% end %>
-        
+
+</form>
   </div><!-- /.navbar-collapse -->
 </nav>
 
