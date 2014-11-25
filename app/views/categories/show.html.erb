@@ -6,7 +6,7 @@
   <% @category.trees.each do |tree|%>
   <h2><%= link_to tree.name.try(:html_safe), category_path %></h2>
   <div class="description"><%= tree.description %></div>
-<li>BTN</li>
+  <%= button_to 'Add to Cart', line_items_path(tree_id: tree) %>
 <% end %>
 
 </div>

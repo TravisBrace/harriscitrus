@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :line_items
+
+  resources :carts
+
   devise_for :admin_users, ActiveAdmin::Devise.config
     
   ActiveAdmin.routes(self)
@@ -9,7 +13,8 @@ Rails.application.routes.draw do
   
   resources :categories
   
-  root 'pages#home'
+  root "pages#home"
+  
 
   get "about" => "pages#about"
   

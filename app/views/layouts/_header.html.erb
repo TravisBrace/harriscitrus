@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-default opaque" role="navigation">
   
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -8,12 +9,15 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <%= link_to "Harris Citrus", root_path, class: "navbar-brand" %>
+    <!-- <%= link_to "Harris Citrus", root_path, class: "navbar-brand" %> -->
+    <a class="navbar-brand" href="#">
+<img alt="" src="https://s3.amazonaws.com/HarrisCitrus/HClogo.png">
+</a>
   </div>
 
   <!-- baahhh Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse">
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-left">
       <li><%= link_to "Trees", categories_path %></li>
       <li><%= link_to "About Us", about_path %></li>
       
@@ -31,6 +35,10 @@
          
          <a href="javascript:;" class="simpleCart_checkout">Checkout</a></li> -->
  <li>         
+          <% if session[:cart_id] == nil %>
+          <% else %>
+          <li><%= link_to "Cart", cart_url(session[:cart_id]) %></li>
+          <% end %>
           <% if user_signed_in? %>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <% else %>  

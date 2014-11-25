@@ -1,0 +1,28 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<div class="jumbotron glass strokeme">
+<h1><font color="white"> Cart </font></h1>
+</div>
+<div class="jumbotron opaque">
+<ul>
+<% @cart.line_items.each do |item| %>
+
+<!-- <%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %> -->
+
+<li><%= item.quantity %> &times; <%= item.tree.name %></li>
+<%= form_for (item) do |f| %>
+<%= f.label :quantity %>
+<%= f.text_field :quantity %>
+<%= f.submit %>
+<% end %>
+<%= link_to 'Remove', item, :method => :delete %>
+
+<% end %>
+
+</ul>  
+<li><%= link_to 'Back', categories_path %></li>
+<li><%= link_to 'Empty Cart', @cart, :method => :delete,
+        data: { confirm: 'Are you sure?' } %>
+</div>
