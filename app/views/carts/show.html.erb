@@ -10,19 +10,31 @@
 
 <!-- <%= link_to 'Edit', edit_cart_path(@cart) %> |
 <%= link_to 'Back', carts_path %> -->
-
-<li><%= item.quantity %> &times; <%= item.tree.name %></li>
+<div class="row">
+<div class="col-md-4">
+<h2><%= item.quantity %>x <%= item.tree.name %>
+<%= link_to "", item, :method => :delete, class: "fa fa-times" %></h2>
 <%= form_for (item) do |f| %>
 <%= f.label :quantity %>
-<%= f.text_field :quantity %>
-<%= f.submit %>
+<div class="cartquantity">
+<%= f.text_field :quantity, :placeholder => ".."%>
+</div>
+<p>Price: <%= number_to_currency(item.tree.price * item.quantity) %></p>
+<div class="form-group"><button class="btn btn-default updatebutton" type='submit'>Update</button></div>
 <% end %>
-<%= link_to 'Remove', item, :method => :delete %>
+</div>
+
 
 <% end %>
 
 </ul>  
-<li><%= link_to 'Back', categories_path %></li>
-<li><%= link_to 'Empty Cart', @cart, :method => :delete,
-        data: { confirm: 'Are you sure?' } %>
+<div class="total">
+<div>
+<p>Total: <%= number_to_currency(@cart.total_price) %></p>
+</div>
+<%= link_to 'Back', categories_path, class: "btn btn-default" %>
+<%= link_to 'Empty Cart', @cart, :method => :delete,
+        data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
+</div>
+</div>
 </div>
