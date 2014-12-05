@@ -1,4 +1,8 @@
 class TreesController < ApplicationController
+
+#  def index
+#    @tree = Tree.search(params[:search])
+#  end
   def show
     @tree=Tree.find(params[:id])
   end

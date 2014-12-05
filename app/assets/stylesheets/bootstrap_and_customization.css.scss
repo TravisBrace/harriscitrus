@@ -2,6 +2,8 @@
 
 .glass{
   background: transparent;
+  margin: 0;
+  padding-top: 0;
 }
 
 .center{
@@ -19,6 +21,7 @@
 
 .glass.jumbotron{
   margin-top: -100px;
+  
 }
 
 .navbar-search {
@@ -65,4 +68,11 @@
 
 .total {text-align: right;}
 
-.updatebutton {margin-top: -10px;}
+.updatebutton {margin-top: -15px;
+}
+
+body p {line-height: 1.25;}
+
+body .nonderliner {text-decoration: none; color: black;}
+
+.nobutton {text-decoration: none;}

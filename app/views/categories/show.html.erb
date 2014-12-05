@@ -4,10 +4,12 @@
 
 <div class="jumbotron opaque">
   <% @category.trees.each do |tree|%>
-  <h2><%= link_to tree.name.try(:html_safe), category_path %></h2>
-  <div class="description"><%= tree.description %></div>
+  <h2><%= tree.name %></h2>
+  <div class="description"><p><%= tree.description %></p></div>
   <br><p>Price: <%= number_to_currency(tree.price) %></p>
-  <%= button_to 'Add to Cart', line_items_path(tree_id: tree) %>
+  <a class="btn btn-default">
+  <%= button_to 'Add to Cart', line_items_path(tree_id: tree), class: "nobutton" %></a>
+  
 <% end %>
 
 </div>

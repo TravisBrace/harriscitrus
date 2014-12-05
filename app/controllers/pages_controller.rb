@@ -45,4 +45,6 @@ class PagesController < ApplicationController
   end
   def cartview
   end
+  def useraccount
+  end
 end

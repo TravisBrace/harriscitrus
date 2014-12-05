@@ -35,19 +35,26 @@
          </span>
          
          <a href="javascript:;" class="simpleCart_checkout">Checkout</a></li> -->
+ <li>
+ <!-- <%= form_tag trees_path, :method => 'get' do %>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", name: nil %>
+  <% end %> -->
+ </li>
  <li>         
           <% if session[:cart_id] == nil %>
           <% else %>
           <li><%= link_to "Cart", cart_url(session[:cart_id]) %></li>
           <% end %>
           <% if user_signed_in? %>
+          <li><%= link_to "User Info", edit_user_registration_path %></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <% else %>  
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
 
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="navbar-search">
+<div class="navbar-search">
   <%= f.text_field :email, :placeholder => "Email" %>
   <%= f.password_field :password, :placeholder => "Password" %>
 </div>

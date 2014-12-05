@@ -5,6 +5,14 @@ class Tree < ActiveRecord::Base
   
   before_destroy :ensure_not_referenced_by_any_line_item
   
+#  def self.text_search(search)
+#    if search
+#      find(:all, :conditions => ['name LIKE ?', "%#{:search}%"])
+#    else
+#      find(:all)
+#   end
+#  end
+  
     private
     
       def ensure_not_referenced_by_any_line_item

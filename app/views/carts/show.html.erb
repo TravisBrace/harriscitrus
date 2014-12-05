@@ -11,9 +11,9 @@
 <!-- <%= link_to 'Edit', edit_cart_path(@cart) %> |
 <%= link_to 'Back', carts_path %> -->
 <div class="row">
-<div class="col-md-4">
+
 <h2><%= item.quantity %>x <%= item.tree.name %>
-<%= link_to "", item, :method => :delete, class: "fa fa-times" %></h2>
+<%= link_to "", item, :method => :delete, class: "fa fa-times nonderliner" %></h2>
 <%= form_for (item) do |f| %>
 <%= f.label :quantity %>
 <div class="cartquantity">
@@ -22,7 +22,7 @@
 <p>Price: <%= number_to_currency(item.tree.price * item.quantity) %></p>
 <div class="form-group"><button class="btn btn-default updatebutton" type='submit'>Update</button></div>
 <% end %>
-</div>
+
 
 
 <% end %>
