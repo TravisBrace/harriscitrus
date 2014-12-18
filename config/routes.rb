@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   resources :line_items
 
-  resources :carts
+  resources :carts do 
+    member do
+      get :payments
+    end
+  end
 
   devise_for :admin_users, ActiveAdmin::Devise.config
     
@@ -13,10 +17,13 @@ Rails.application.routes.draw do
   
   resources :categories
   
+  resources :charges  
+  
+  
   get "home" => "pages#home"
   root "pages#home"
   
-
+  
   get "about" => "pages#about"
   
   get "bloodorange" => "pages#bloodorange"
@@ -38,6 +45,7 @@ Rails.application.routes.draw do
   get "tangerines" => "pages#tangerines"
   get "shiprate" => "pages#shiprate"
   get "cartview" => "pages#cartview"
+  get "payments" => "carts#payments"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

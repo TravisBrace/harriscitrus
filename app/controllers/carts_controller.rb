@@ -89,3 +89,7 @@ class CartsController < ApplicationController #InheritedResources::Base
     redirect_to root_url, notice: 'Invalid cart'
   end
 end
+
+def payments
+  Cart.find(session[:cart_id])
+end

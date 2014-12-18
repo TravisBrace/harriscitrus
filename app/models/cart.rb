@@ -15,6 +15,10 @@ def add_tree(tree_id)
   current_item
 end
 
+def payments
+   session[:cart_id] = @cart.id
+end
+
   def total_price
     line_items.to_a.sum { |item| item.total_price }
   end

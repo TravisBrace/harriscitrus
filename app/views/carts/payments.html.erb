@@ -1,0 +1,27 @@
+<div class="jumotron glass strokeme">
+  <h1><font color="white">Payment Processing</font></h1>
+</div>
+ 
+ 
+ 
+<% @cart.line_items.each do |item| %>
+<%= item.quantity %>
+ <%= number_to_currency(@cart.total_price) %>
+<% end %>
+ 
+ <div class="jumbotron opaque">
+  <div class="field">
+    <%= label_tag :card_number, "Credit Card Number" %>
+    <%= text_field_tag :card_number, nil, name: nil %>
+  </div>
+  <div class="field">
+    <%= label_tag :card_number, "Security Code on Card (CVV)" %>
+    <%= text_field_tag :card_number, nil, name: nil %>
+  </div>
+  <div class="field">
+    <%= label_tag :card_month, "Card Expiration" %>
+    <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"} %>
+    <%= select_month nil, {start_year: Date.today.year, end_year: Date.today.year+15},
+  {name: nil, id: "Card_year"} %>
+  </div>
+ </div>

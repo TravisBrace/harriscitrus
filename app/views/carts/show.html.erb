@@ -33,6 +33,7 @@
 <p>Total: <%= number_to_currency(@cart.total_price) %></p>
 </div>
 <%= link_to 'Back', categories_path, class: "btn btn-default" %>
+<%= link_to 'Checkout', payments, :method => :payments, class: "btn btn-default" %>
 <%= link_to 'Empty Cart', @cart, :method => :delete,
         data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
 </div>
