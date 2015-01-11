@@ -22,6 +22,24 @@
   
 }
 
+.dropdown-menu.multi-level {
+  text-align: right;
+}
+
+.navbar-toggle {
+  margin-right: 0px;
+  margin-left: 0px;
+  left: 20px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+}
+
+.navbar-nav.navbar-right{
+  text-align: right;
+}
+
 .navbar-search {
   #user_email, #user_password {
     float: left;
@@ -31,6 +49,10 @@
 
 .navbar-form.navbar-right:last-child {
   margin-right: 0;
+}
+
+.form-group {
+  margin-bottom: 0;
 }
 
 .body{
