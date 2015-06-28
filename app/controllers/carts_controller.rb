@@ -1,7 +1,8 @@
 class CartsController < ApplicationController #InheritedResources::Base
   before_action :set_cart, only: [:show, :edit, :update, :destroy]
   rescue_from ActiveRecord::RecordNotFound, with: :invalid_cart
-  before_action :authenticate_user!
+  #before_action :correct_user, only: [:show, :edit, :update, :destroy]
+  #before_action :authenticate_user!
   
   # GET /carts
   # GET /carts.json
@@ -93,3 +94,12 @@ end
 def payments
   Cart.find(session[:cart_id])
 end
+
+#def correct_user
+ # @cart = Cart.find(params[:id])
+  #redirect_to carts_path, notice: "Not authorized to view this cart" if @cart.nil?
+#end
+
+#def cart_params
+#  params.require(:cart).permit(:user_id)
+#end

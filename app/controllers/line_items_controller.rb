@@ -1,7 +1,7 @@
 class LineItemsController < ApplicationController #InheritedResources::Base
-  include CurrentCart
+  #include CurrentCart
   before_action :set_cart, only: [:new, :create]
- # before_action :set_line_item, only: [:show, :edit, :update, :destroy]
+  before_action :set_line_item, only: [:show, :edit, :update, :destroy]
   
   #get /line_items
   #...
@@ -56,5 +56,11 @@ class LineItemsController < ApplicationController #InheritedResources::Base
   def line_item_params
     params.require(:line_item).permit(:product_id, :quantity)
   end
-end
 
+
+  def set_cart
+    @cart = Cart.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    @cart = Cart.create
+  end
+end

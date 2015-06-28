@@ -16,6 +16,7 @@
 
 //= require jquery.backstretch.min
 //= require simpleCart.min
+//= require pace.min.js
 //= require_tree .
 
 $(function(){

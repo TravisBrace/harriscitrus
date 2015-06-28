@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta name="theme-color" content="#2ecc71">
 <html>
-
+ <%= javascript_include_tag "pace.min", "data-pace-options" => '{ "ajax": false, "restartOnPushState": false, "restartOnRequestAfter": false, "eventLag": false }', "data-turbolinks-track" => true %>
 <%= render 'layouts/header' %>
 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -14,6 +14,7 @@ email: "TravisBrace@gmail.com"
 }
 });
 </script> -->
+  
 
 
 <head>
