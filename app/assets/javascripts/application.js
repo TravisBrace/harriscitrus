@@ -14,20 +14,14 @@
 //= require jquery_ujs
 //= require bootstrap
 
-//= require jquery.backstretch.min
 //= require simpleCart.min
-//= require pace.min.js
+
 //= require_tree .
 
 $(function(){
   $('.opaque.jumbotron').fadeIn('slow');
   $('.glass.jumbotron').animate({marginTop:0});});
 
-$(document).ready(function(){
-
-  $.backstretch("https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg");
-
-});
 
 $('.dropdown-menu input').click(function(e) {
   e.stopPropagation(); //This will prevent the event from bubbling up and close the dropdown when you type/click on text boxes.

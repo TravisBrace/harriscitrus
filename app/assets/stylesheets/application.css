@@ -13,12 +13,13 @@
  *= require_self
  *= pace
  *= require bootstrap_and_customization
+ *= require home
  */
 
 
 @import 'bootstrap';
 
-.pace {
+/*.pace {
   -webkit-pointer-events: none;
   pointer-events: none;
   
@@ -57,3 +58,4 @@
   text-align: right;
   color: rgba(15, 59, 84, 0.19999999999999996);
 }
+*/
