@@ -5,5 +5,4 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_one :cart
   has_many :line_items, :through => :cart
-  
 end

@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   
   resources :charges  
   
+  resources :pages
+  get "newhome" => "pages#newhome"
   
   get "home" => "pages#home"
   root "pages#home"

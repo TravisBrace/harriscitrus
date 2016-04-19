@@ -1,0 +1,138 @@
+.slide1 {
+  display: block;
+  position: relative;
+  /*background: url(https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg) no-repeat center center;
+  background-size: contain;
+  background-position: 50%;
+  overflow: hidden;*/
+  height: 100vh;
+  width: auto;
+  top: 0; left: 0;
+  right: 0; bottom: 0
+}
+
+.bg {
+  background-image: url('https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg');
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.center-home {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.home .slide1 h1{
+  margin-top: 20px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home .slide1 h2{
+  color: #B8BABC;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home .slide1 .button2 {
+  padding: 18px;
+  color: white;
+  border: 1px solid white;
+  transition: all 2s;
+    -webkit-transition: all 2s;
+}
+
+.home .slide1 .button2:hover {
+  background-color: white;
+  opacity: .5;
+  color: black;
+}
+
+.buttons-on-top {
+  display: none;
+}
+
+.buttons-on-bottom {
+  font-family: 'open sans';
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  padding-top: 23px;
+  position: absolute;
+  bottom: 0;
+  margin-top: 10px;
+  border-top: 1px solid white;
+
+  a {
+    margin: 0 5px;
+  }
+
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:-webkit-any-link {
+    text-decoration: none;
+  }
+}
+
+.buttons-on-bottom a:hover {
+  background-color: transparent;
+  color: #666;
+}
+
+/* for viewports smaller than bg */
+@media (max-width: 905px) {
+
+    .slide1 {
+        background-size: 905px 659px; /* Force the image to its minimum width */
+    }
+
+}
+
+/* for viewports bigger than background
+@media (min-width: 906px) {
+
+    .slide1 {
+      background-size:
+    }
+
+*/
+
+.slide2 {
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: auto;
+  background-color: black;
+
+  h2 {
+    position: absolute;
+    top: 50%; left: 0;
+  }
+
+}
+
+.slide3 {
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: auto;
+  background-color: white;
+
+  h2 {
+    position: absolute;
+    top: 40%; right: 0;
+  }
+
+}

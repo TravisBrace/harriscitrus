@@ -1,1 +1,20 @@
-<ul
+  <div class="navbarnew">
+
+    <div class="navbar-brand" href="home">
+      <img src="https://s3.amazonaws.com/HarrisCitrus/HClogo.png">
+    </div>
+
+    <div class="center-buttons display-none">
+      <a><%= link_to "Trees", trees_path %></a>
+      <a><%= link_to "Shipping & Returns", shiprate_path %></a>
+      <a><%= link_to "About Us", about_path %></a>
+    </div>
+
+    <div class="firstnav">
+      <%= link_to new_user_registration_path do %>
+        <i class="fa fa-sign-in"></i>
+      <%end%>
+      <a><i class="fa fa-shopping-cart"></i></a>
+    </div>
+
+  </div>

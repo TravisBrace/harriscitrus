@@ -1,11 +1,53 @@
+#loader-wrapper .loader-section {
+  position:fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  z-index: 1000;
+  background: #222222;
+  -webkit-animation-name: preloader;
+  -webkit-animation-duration: 4s;
+  animation-name-name: preloader;
+  animation-duration: 4s;
+  opacity: 0;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+#loader {
+  z-index: 1000;
+}
+
+#loader-wrapper {
+
+}
+
+@-webkit-keyframes preloader {
+  0% {opacity: 100;}
+  75% {opacity: 100;}
+  100% {opacity: 0;}
+}
+
+@keygrames preloader {
+  0% {opacity: 100;}
+  80% {opacity: 100;}
+  100% {opacity: 0;}
+}
+
 .static-header {
-  background: url('harrisbackground3.jpg') no-repeat center center; 
+  background: url('/harrisbackground3.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; 
-  background-attachment: fixed; 
-  min-height: 1155px; 
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 1100px;
   position: relative;
   margin-top: -72px;
 }

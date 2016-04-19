@@ -1,0 +1,223 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ *= pace
+
+
+ */
+
+
+
+@import 'bootstrap';
+
+/*.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace.pace-inactive .pace-progress {
+  display: none;
+}
+
+.pace .pace-progress {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  height: 5rem;
+  width: 5rem;
+  
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.pace .pace-progress:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: .5rem;
+  content: attr(data-progress-text);
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 5rem;
+  line-height: 1;
+  text-align: right;
+  color: rgba(15, 59, 84, 0.19999999999999996);
+}
+*/
+/* line 1, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.glass {
+  background: transparent;
+  margin: 0;
+  padding-top: 0;
+}
+
+/* line 7, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.center {
+  text-align: center;
+}
+
+/* line 11, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.opaque {
+  opacity: 0;
+}
+
+/* line 15, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.opaque.jumbotron {
+  display: none;
+}
+
+/* line 20, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.glass.jumbotron {
+  margin-top: -100px;
+}
+
+/* line 25, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.dropdown-menu.multi-level {
+  text-align: right;
+}
+
+/* line 29, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.navbar-toggle {
+  margin-right: 0px;
+  margin-left: 0px;
+  left: 20px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+}
+
+/* line 39, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.navbar-nav.navbar-right {
+  text-align: right;
+}
+
+/* line 44, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.navbar-search #user_email, .navbar-search #user_password {
+  float: left;
+  width: calc(85% + 22px);
+}
+
+/* line 50, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.navbar-form.navbar-right:last-child {
+  margin-right: 0;
+}
+
+/* line 54, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.form-group {
+  margin-bottom: 0;
+}
+
+/* line 58, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.body {
+  overflow: hidden;
+}
+
+/* line 63, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.strokeme {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* line 74, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.description {
+  font-size: 1.5em;
+}
+
+/* line 78, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.navbar {
+  z-index: 10000;
+}
+
+/* line 83, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.navbar-brand {
+  margin-top: -15px;
+  size: 50%;
+}
+
+/* line 85, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.cartquantity {
+  width: calc(100px);
+}
+
+/* line 87, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.left {
+  text-align: left;
+}
+
+/* line 89, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.total {
+  text-align: right;
+}
+
+/* line 91, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.updatebutton {
+  margin-top: -15px;
+}
+
+/* line 94, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+body p {
+  line-height: 1.25;
+}
+
+/* line 96, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+body .nonderliner {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 98, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/bootstrap_and_customization.css.scss */
+.submit-button {
+  color: white !important;
+}
+/* line 1, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/home.css.scss */
+.static-header {
+  background: url("harrisbackground3.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 1100px;
+  position: relative;
+  margin-top: -72px;
+}
+
+/* line 13, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/home.css.scss */
+.home {
+  height: 200%;
+}
+
+/* line 19, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/home.css.scss */
+.header-logo-title {
+  top: 80px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30vw;
+  display: block;
+  position: relative;
+}
+
+/* line 31, /home/bractr/sites/harriscitrusredu/app/assets/stylesheets/home.css.scss */
+.logo-responsive {
+  background: url("HClogo.png") center center no-repeat;
+  width: 500%;
+}
