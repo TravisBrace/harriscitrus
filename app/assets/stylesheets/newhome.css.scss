@@ -37,6 +37,9 @@
 
 .home .slide1 h2{
   color: #B8BABC;
+  margin-top: -8px;
+  margin-bottom: 18px;
+  font-size: 20px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -60,20 +63,21 @@
 
 .buttons-on-bottom {
   font-family: 'open sans';
-  font-size: 20px;
+  font-size: 14px;
   color: white;
   text-decoration: none;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 50px;
-  padding-top: 23px;
+  height: 86px;
   position: absolute;
   bottom: 0;
-  margin-top: 10px;
+
   border-top: 1px solid white;
 
   a {
-    margin: 0 5px;
+    margin: 0 7px;
   }
 
   a:visited {
@@ -89,6 +93,7 @@
 .buttons-on-bottom a:hover {
   background-color: transparent;
   color: #666;
+  text-decoration: underline;
 }
 
 /* for viewports smaller than bg */
@@ -114,12 +119,25 @@
   position: relative;
   height: 100vh;
   width: auto;
-  background-color: black;
+  background-color: #EFEFEF;
 
   h2 {
     position: absolute;
     top: 50%; left: 0;
   }
+
+}
+
+.tree_trio {
+  background-image: url('https://s3.amazonaws.com/HarrisCitrus/treetrio.png');
+  height: 33vw;
+  width: 33vw;
+  top: 10%;
+  left: 48%;
+  background-size: cover;
+  display: block;
+  position: relative;
+
 
 }
 

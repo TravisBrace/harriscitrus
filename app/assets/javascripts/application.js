@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-
+//= require navbar
 //= require simpleCart.min
 
 //= require_tree .

@@ -2,9 +2,11 @@
   position: fixed;
   z-index: 100;
   display: flex;
-  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: auto;
+  -webkit-transition: all .3s;
 }
 
 potentialbackground {
@@ -13,10 +15,12 @@ potentialbackground {
 
 .navbarnew a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
     color: white;
     font-family: 'open sans';
     margin: auto 5px;
+    text-align: center;
+
   }
 
   .navbarnew a:visited {
@@ -30,18 +34,22 @@ potentialbackground {
 
 
 .navbar-brand {
-  width: 30%;
   height: 76px;
   margin: 5px;
+  margin-left: 10px;
   display: flex;
   justify-content: flex-start;
 }
 
 .center-buttons {
-  margin: auto;
-  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
+  margin-left: 30px;
+
+  a {
+    margin: 0 7px;
+  }
 }
 
 .display-none {
@@ -50,14 +58,21 @@ potentialbackground {
 
 .firstnav {
   display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  right: 0;
-  top: 25px;
-  margin-right: 10px;
+  margin-right: 25px;
+  color: white;
 
   i {
     margin: auto 10px;
     font-size: 30px;
   }
+}
+
+.fa-sign-in:hover {
+  font-size: 50px;
+}
+
+.navbar-after {
+  background-color: #25410A;
+  -webkit-transition: all 2s;
+  transition: all .6s;
 }
