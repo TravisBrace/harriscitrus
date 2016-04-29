@@ -15,5 +15,5 @@
  *= require bootstrap_and_customization
  *= require home
 
- *= require_tree
+ *= require_tree .
  */
