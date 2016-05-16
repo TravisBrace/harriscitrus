@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require navbar
+//= require newhome
 //= require simpleCart.min
 
 //= require_tree .

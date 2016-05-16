@@ -1,3 +1,7 @@
+.home {
+  margin-bottom: 15vw;
+}
+
 .slide1 {
   display: block;
   position: relative;
@@ -12,7 +16,7 @@
 }
 
 .bg {
-  background-image: url('https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg');
+
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
@@ -23,10 +27,92 @@
   flex-flow: column;
 }
 
+
+
+.background-slideshow {
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  height: 100%;
+
+  .bg1 {
+    background-image: url('https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .bg2 {
+    background-image: url('https://s3.amazonaws.com/HarrisCitrus/11335167_114112672266213_969168210_n.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .bg3 {
+    background-image: url('https://s3.amazonaws.com/HarrisCitrus/10727682_727015880714109_1602784454_n.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .bg4 {
+    background-image: url('https://s3.amazonaws.com/HarrisCitrus/10932069_379807885514608_1692832561_n.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .bg5 {
+    background-image: url('https://s3.amazonaws.com/HarrisCitrus/12269902_1677098559197144_1600374124_n.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+}
+
+.greytopbackground {
+  background-color: white;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  height: 100%; width: 100%;
+  top: 0; left: 0;
+  z-index: -5;
+}
+
 .center-home {
   display: flex;
   align-items: center;
   flex-flow: column;
+  z-index: 100;
 }
 
 .home .slide1 h1{
@@ -61,7 +147,7 @@
   display: none;
 }
 
-.buttons-on-bottom {
+.slide1 .bg .buttons-on-bottom {
   font-family: 'open sans';
   font-size: 14px;
   color: white;
@@ -72,7 +158,7 @@
   width: 100%;
   height: 86px;
   position: absolute;
-  bottom: 0;
+  bottom: 0; left: 0;
 
   border-top: 1px solid white;
 
@@ -115,42 +201,72 @@
 */
 
 .slide2 {
-  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: relative;
   height: 100vh;
   width: auto;
   background-color: #EFEFEF;
 
-  h2 {
-    position: absolute;
-    top: 50%; left: 0;
+  .button2 {
+    border: 1px solid black;
+    padding: 18px;
+    margin-left: 4%;
+    -webkit-transition: all 1.3s;
+    transition: all 1.3s;
+  }
+
+  .button2:hover {
+    background-color: #25410A;
+    color: white;
   }
 
 }
+
+.container {
+  height: 30vw;
+  width: 36vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    margin-left: 4%;
+    font-size: 2.5em;
+    line-height: 150%;
+  }
+}
+
 
 .tree_trio {
   background-image: url('https://s3.amazonaws.com/HarrisCitrus/treetrio.png');
   height: 33vw;
-  width: 33vw;
-  top: 10%;
-  left: 48%;
+  width: 35vw;
   background-size: cover;
   display: block;
   position: relative;
+  margin-top: -20px;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
 
-
+.tree_trio:hover {
+    height: 35vw;
+    width: 37vw;
 }
 
 .slide3 {
-  display: block;
+  background-image: url('https://s3.amazonaws.com/HarrisCitrus/11093033_1633260546903810_985168439_n.jpg');
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: 100vh;
   width: auto;
   background-color: white;
-
-  h2 {
-    position: absolute;
-    top: 40%; right: 0;
-  }
 
 }

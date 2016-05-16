@@ -1,33 +1,33 @@
 Rails.application.routes.draw do
   resources :line_items
 
-  resources :carts do 
+  resources :carts do
     member do
       get :payments
     end
   end
 
   devise_for :admin_users, ActiveAdmin::Devise.config
-    
+
   ActiveAdmin.routes(self)
 
   devise_for :users
   get 'create/tree'
   resources :trees
-  
+
   resources :categories
-  
-  resources :charges  
-  
+
+  resources :charges
+
   resources :pages
   get "newhome" => "pages#newhome"
-  
+
   get "home" => "pages#home"
-  root "pages#home"
-  
-  
+  root "pages#newhome"
+
+
   get "about" => "pages#about"
-  
+
   get "bloodorange" => "pages#bloodorange"
   get "citron" => "pages#citron"
   get "redgrapefruit" => "pages#redgrapefruit"
@@ -48,7 +48,7 @@ Rails.application.routes.draw do
   get "shiprate" => "pages#shiprate"
   get "cartview" => "pages#cartview"
   get "payments" => "carts#payments"
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

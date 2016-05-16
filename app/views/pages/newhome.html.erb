@@ -2,22 +2,51 @@
 
 <div class="home">
   <div class="slide1">
-    <div class="bg">
-      <div class="center-home">
-        <h1>Harris Citrus Nursery</h1>
-        <h2>Where Citrus Comes Alive</h2>
-        <div class="button2"><c>shop now</c></div>
+    <div class="background-slideshow">
+      <div class="bg1">
+        <n class="center-home">
+          <h1>Harris Citrus Nursery</h1>
+          <h2>Where Citrus Comes Alive</h2>
+          <n class="button2"><c>shop now</c></n>
+        </n>
       </div>
-        <div class="middle-buttons buttons-on-bottom">
-          <a><%= link_to "Trees", trees_path %></a>
-          <a><%= link_to "Shipping & Returns", shiprate_path %></a>
-          <a><%= link_to "About Us", about_path %></a>
-        </div>
+      <div class="bg2">
+        <n class="center-home">
+          <h1>Local Trees from a Florida Nusery</h1>
+          <h2>See the qualitiy difference a caring touch can make</h2>
+          <n class="button2"><c>learn more about us</c></n>
+        </n>
+      </div>
+      <div class="bg3">
+        <n class="center-home">
+          <h1>Cold Hardy Rootstocks</h1>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+          <n class="button2"><c>curabitur rhoncus</c></n>
+        </n>
+      </div>
+      <div class="bg4">
+        <n class="center-home">
+          <h1>Duis id quam quis ex elementum</h1>
+          <h2>congue ut vel quam</h2>
+          <n class="button2"><c>curabitur rhoncus</c></n>
+        </n>
+      </div>
+    </div>
+    <div class="greytopbackground"></div>
+    <div class="bg">
+      <div class="middle-buttons buttons-on-bottom">
+        <a><%= link_to "Trees", trees_path %></a>
+        <a><%= link_to "Shipping & Returns", shiprate_path %></a>
+        <a><%= link_to "About Us", about_path %></a>
+      </div>
     </div>
   </div>
   <div class="slide2">
+      <div class="container">
+        <h2>Hosting one of the largest varieties of citrus trees in these United States. Check out our inventory.</h2>
+        <div class="button2">View Now</div>
+      </div>
       <div class="tree_trio"></div>
-      <h2>Hosting one of the largest varieties of citrus trees</h2>
   </div>
   <div class="slide3">
     <h2>The USDA now allows our nursery to ship out of state</h2>
@@ -25,3 +54,5 @@
     <div class="button">here</div>
   </div>
 </div>
+
+<%= render 'layouts/footer' %>
