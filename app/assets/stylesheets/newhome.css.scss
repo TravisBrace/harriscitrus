@@ -115,7 +115,7 @@
   z-index: 100;
 }
 
-.home .slide1 h1{
+.home h1{
   margin-top: 20px;
   color: white;
   font-family: 'Open Sans', sans-serif;
@@ -200,6 +200,18 @@
 
 */
 
+.slide2 .container .hide {
+  margin-right: 200vw;
+  transition: all 5s;
+  -webkit-transition: all 3s;
+}
+
+.slide2 .tree_trio .hide {
+  margin-left: 200vw;
+  transition: all 2s;
+  -webkit-transition: all 5s;
+}
+
 .slide2 {
   display: flex;
   justify-content: space-around;
@@ -208,6 +220,7 @@
   height: 100vh;
   width: auto;
   background-color: #EFEFEF;
+  -webkit-transition: all 2s;
 
   .button2 {
     border: 1px solid black;
@@ -231,6 +244,8 @@
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  transition: all 5s;
+  -webkit-transition: all 5s;
 
   h2 {
     margin-left: 4%;
