@@ -4,7 +4,7 @@ $(document).ready(function(){
     setInterval(function(){
       $('.background-slideshow div:first').fadeOut(1000)
         .next('div').fadeIn(3000)
-        .end().appendTo('.background-slideshow');}, 7000);
+        .end().appendTo('.background-slideshow');}, 5000);
   });
 });
 

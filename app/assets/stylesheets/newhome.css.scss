@@ -201,15 +201,11 @@
 */
 
 .slide2 .container .hide {
-  margin-right: 200vw;
-  transition: all 5s;
-  -webkit-transition: all 3s;
+  -webkit-transform: translate(-150vw);
 }
 
 .slide2 .tree_trio .hide {
-  margin-left: 200vw;
-  transition: all 2s;
-  -webkit-transition: all 5s;
+  -webkit-trasform: translate(150vw);
 }
 
 .slide2 {
@@ -219,8 +215,7 @@
   position: relative;
   height: 100vh;
   width: auto;
-  background-color: #EFEFEF;
-  -webkit-transition: all 2s;
+  background-image: image-url('slide2-background.jpg');
 
   .button2 {
     border: 1px solid black;
@@ -244,8 +239,6 @@
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  transition: all 5s;
-  -webkit-transition: all 5s;
 
   h2 {
     margin-left: 4%;
@@ -273,7 +266,7 @@
 }
 
 .slide3 {
-  background-image: url('https://s3.amazonaws.com/HarrisCitrus/11093033_1633260546903810_985168439_n.jpg');
+  background-image: image-url('harris-in-greenhouse.jpg');
   background-size: cover;
   display: flex;
   flex-flow: column;
@@ -284,4 +277,47 @@
   width: auto;
   background-color: white;
 
+  .button2 {
+    border: 1px solid black;
+    padding: 18px;
+    margin-left: 4%;
+    -webkit-transition: all 1.3s;
+    transition: all 1.3s;
+  }
+
+  .button2:hover {
+    background-color: #25410A;
+    color: white;
+  }
+
+}
+
+.slide3 .container {
+  color: white;
+  text-align: center;
+  width: 66vw;
+}
+
+.slide3 .container h2 {
+  color: white;
+}
+
+.slide4 {
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100vw;
+}
+
+.profile {
+  margin: 100px;
+  background-color: grey;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
