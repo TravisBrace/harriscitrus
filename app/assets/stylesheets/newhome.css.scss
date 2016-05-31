@@ -60,7 +60,7 @@
   }
 
   .bg3 {
-    background-image: url('https://s3.amazonaws.com/HarrisCitrus/10727682_727015880714109_1602784454_n.jpg');
+    background-image: url('new-slide-3.jpg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -200,13 +200,6 @@
 
 */
 
-.slide2 .container .hide {
-  -webkit-transform: translate(-150vw);
-}
-
-.slide2 .tree_trio .hide {
-  -webkit-trasform: translate(150vw);
-}
 
 .slide2 {
   display: flex;
@@ -232,13 +225,15 @@
 
 }
 
-.container {
+.container2 {
   height: 30vw;
   width: 36vw;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  transition: all  1s;
+
 
   h2 {
     margin-left: 4%;
@@ -247,6 +242,9 @@
   }
 }
 
+.containertransformX {
+  transform: translateX(-150vw);
+}
 
 .tree_trio {
   background-image: url('https://s3.amazonaws.com/HarrisCitrus/treetrio.png');
@@ -256,8 +254,7 @@
   display: block;
   position: relative;
   margin-top: -20px;
-  transition: all .5s;
-  -webkit-transition: all .5s;
+  left: 150vw
 }
 
 .tree_trio:hover {

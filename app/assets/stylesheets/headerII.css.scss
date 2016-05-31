@@ -18,7 +18,6 @@ potentialbackground {
     font-size: 14px;
     color: white;
     font-family: 'open sans';
-    margin: auto 5px;
     text-align: center;
 
   }
@@ -50,6 +49,12 @@ potentialbackground {
   a {
     margin: 0 7px;
   }
+
+  -webkit-transition: all 3s;
+}
+
+.middle-buttons a:hover {
+  border-bottom: 1px solid white;
 }
 
 .display-none {
@@ -65,13 +70,39 @@ potentialbackground {
     margin: auto 10px;
     font-size: 30px;
   }
+
 }
 
-.firstnav .login:hover {
+.firstnav .container {
+  height: 86px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  border-bottom: none;
+  transition: all .5s;
+}
+
+.firstnav .container:hover {
   font-size: 50px;
+  background: white;
+  border-bottom: 1px solid white;
+  margin-bottom: -10px;
+
 
   .fa-shopping-cart {
     font-size: 50;
+  }
+
+  i {
+    font-size: 33px;
+    color: black;
+  }
+
+  a {
+    font-size: 20px;
+    color: black;
   }
 }
 

@@ -2,15 +2,15 @@ $(document).ready(function(){
   $(function(){
     $('.background-slideshow div:gt(0)').hide();
     setInterval(function(){
-      $('.background-slideshow div:first').fadeOut(1000)
-        .next('div').fadeIn(3000)
-        .end().appendTo('.background-slideshow');}, 5000);
+      $('.background-slideshow div:first').fadeOut()
+        .next('div').fadeIn(2000)
+        .end().appendTo('.background-slideshow');}, 8000);
   });
 });
 
   $(window).on("scroll", function(){
-    if($("body").scrollTop() >= $(".slide1").height() - 212){
-      $(".container").removeClass("hide");
-      $(".tree_trio").removeClass("hide");
+    if($(document).scrollTop() >= $(".slide1").height() - 212){
+      $(".container2").removeClass("containertransformX")
+      $(".tree_trio").animate({left: '0'}, 1000);
     };
   });
