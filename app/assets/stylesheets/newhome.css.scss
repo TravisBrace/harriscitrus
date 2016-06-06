@@ -12,11 +12,11 @@
   height: 100vh;
   width: auto;
   top: 0; left: 0;
-  right: 0; bottom: 0
+  right: 0; bottom: 0;
+  z-index: 1;
 }
 
 .bg {
-
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
@@ -27,7 +27,13 @@
   flex-flow: column;
 }
 
-
+.fadeout {
+  z-index: -10;
+  position: absolute;
+  top: 0; left: 0;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+}
 
 .background-slideshow {
   background-repeat: no-repeat;
@@ -41,10 +47,14 @@
     background-position: 100%;
     background-size: cover;
     height: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    top: 0; left: 0;
   }
 
   .bg2 {
@@ -53,10 +63,14 @@
     background-position: 100%;
     background-size: cover;
     height: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    top: 0; left: 0;
   }
 
   .bg3 {
@@ -65,10 +79,14 @@
     background-position: 100%;
     background-size: cover;
     height: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    top: 0; left: 0;
   }
 
   .bg4 {
@@ -77,10 +95,14 @@
     background-position: 100%;
     background-size: cover;
     height: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    top: 0; left: 0;
   }
 
   .bg5 {
@@ -89,10 +111,14 @@
     background-position: 100%;
     background-size: cover;
     height: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    top: 0; left: 0;
   }
 
 }
@@ -129,7 +155,7 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-.home .slide1 .button2 {
+.home .button2 {
   padding: 18px;
   color: white;
   border: 1px solid white;
@@ -137,7 +163,7 @@
     -webkit-transition: all 2s;
 }
 
-.home .slide1 .button2:hover {
+.home .button2:hover {
   background-color: white;
   opacity: .5;
   color: black;
@@ -147,7 +173,7 @@
   display: none;
 }
 
-.slide1 .bg .buttons-on-bottom {
+.slide1 .buttons-on-bottom {
   font-family: 'open sans';
   font-size: 14px;
   color: white;
@@ -206,23 +232,13 @@
   justify-content: space-around;
   align-items: center;
   position: relative;
-  height: 100vh;
+  height: 1265px;
   width: auto;
+  margin-top: -75vh;
+  margin-bottom: 30vh;
   background-image: image-url('slide2-background.jpg');
-
-  .button2 {
-    border: 1px solid black;
-    padding: 18px;
-    margin-left: 4%;
-    -webkit-transition: all 1.3s;
-    transition: all 1.3s;
-  }
-
-  .button2:hover {
-    background-color: #25410A;
-    color: white;
-  }
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container2 {
@@ -233,6 +249,7 @@
   align-items: center;
   justify-content: center;
   transition: all  1s;
+  margin-top: 152px;
 
 
   h2 {
@@ -253,8 +270,8 @@
   background-size: cover;
   display: block;
   position: relative;
-  margin-top: -20px;
-  left: 150vw
+  margin-top: 152px;
+  left: 150vw;
 }
 
 .tree_trio:hover {
@@ -274,25 +291,16 @@
   width: auto;
   background-color: white;
 
-  .button2 {
-    border: 1px solid black;
-    padding: 18px;
-    margin-left: 4%;
-    -webkit-transition: all 1.3s;
-    transition: all 1.3s;
-  }
-
-  .button2:hover {
-    background-color: #25410A;
-    color: white;
-  }
-
 }
 
 .slide3 .container {
   color: white;
+  display: flex;
   text-align: center;
-  width: 66vw;
+  flex-direction: column;
+  align-items: center;
+
+
 }
 
 .slide3 .container h2 {
@@ -310,6 +318,11 @@
 
 .slide4 .profile {
   display: flex;
+}
+
+.profile-container {
+  width: 40vw;
+  margin: 10vw;
 }
 
 .profile-picture {
