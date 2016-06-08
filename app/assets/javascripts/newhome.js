@@ -22,3 +22,13 @@ $(document).ready(function(){
     slide2 = document.getElementById('slide2');
     slide2.style.top = ypos * .4 + 'px';
   });
+
+
+  $(document).ready(function(){
+    $(".profile-container").hide();
+  });
+  $(window).on("scroll", function(){
+    if($(document).scrollTop() >= $(".slide1").height() + $(".slide3").height() + ($(".slide3").height()/2)){
+      $(".profile-container").fadeIn(1500);
+    };
+  });

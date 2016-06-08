@@ -42,7 +42,7 @@
   height: 100%;
 
   .bg1 {
-    background-image: url('https://s3.amazonaws.com/HarrisCitrus/harrisbackground3.jpg');
+    background-image: url('background1.jpg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -58,7 +58,7 @@
   }
 
   .bg2 {
-    background-image: url('https://s3.amazonaws.com/HarrisCitrus/11335167_114112672266213_969168210_n.jpg');
+    background-image: url('background2.jpg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -90,7 +90,7 @@
   }
 
   .bg4 {
-    background-image: url('https://s3.amazonaws.com/HarrisCitrus/10932069_379807885514608_1692832561_n.jpg');
+    background-image: url('background4.jpg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -106,7 +106,7 @@
   }
 
   .bg5 {
-    background-image: url('https://s3.amazonaws.com/HarrisCitrus/12269902_1677098559197144_1600374124_n.jpg');
+    background-image: url('background5.jpg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -188,11 +188,13 @@
 
   border-top: 1px solid white;
 
-  a {
+  .btn {
     margin: 0 7px;
+    color: white;
+    text-decoration: none;
   }
 
-  a:visited {
+  .btn:visited {
     color: white;
     text-decoration: none;
   }
@@ -202,7 +204,7 @@
   }
 }
 
-.buttons-on-bottom a:hover {
+.buttons-on-bottom .btn:hover {
   background-color: transparent;
   color: #666;
   text-decoration: underline;
@@ -312,7 +314,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: auto;
+  height: 125vh;
   width: 100vw;
 }
 
@@ -323,6 +325,10 @@
 .profile-container {
   width: 40vw;
   margin: 10vw;
+}
+
+.hide {
+  display: none;
 }
 
 .profile-picture {
