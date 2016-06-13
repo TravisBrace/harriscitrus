@@ -28,7 +28,7 @@ $(document).ready(function(){
     $(".profile-container").hide();
   });
   $(window).on("scroll", function(){
-    if($(document).scrollTop() >= $(".slide1").height() + $(".slide3").height() + ($(".slide3").height()/2)){
+    if($(document).scrollTop() >= $(".slide1").height() + $(".slide3").height() + ($(".slide3").height()) ){
       $(".profile-container").fadeIn(1500);
     };
   });
