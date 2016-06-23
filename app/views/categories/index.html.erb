@@ -2,9 +2,10 @@
 <h1><font color="white">Varieties</font></h1>
 </div>
 
-<div class="jumbotron opaque">
-  <% Category.all.each do |cat| %>
-      <h2><%= link_to cat.name.try(:html_safe), category_path(cat) %></h2>
-  <% end %>
+<div class="categoryindex">
+    <% Category.all.each do |cat| %>
+      <div class="category">
+        <h2><%= link_to cat.name.try(:html_safe), category_path(cat) %></h2>
+      </div>
+    <% end %>
 </div>
-
