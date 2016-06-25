@@ -5,14 +5,14 @@
         <n class="center-home">
           <h1>Harris Citrus Nursery</h1>
           <h2>Where Citrus Comes Alive</h2>
-          <n class="button2"><c>shop now</c></n>
+          <%= link_to "shop now", categories_path, class: "button2" %>
         </n>
       </div>
       <div class="bg2">
         <n class="center-home">
           <h1>Local Trees from a Florida Nusery</h1>
           <h2>See the qualitiy difference a caring touch can make</h2>
-          <n class="button2"><c>learn more about us</c></n>
+          <%= link_to "learn more about us", about_path, class: "button2" %>
         </n>
       </div>
       <div class="bg3">
@@ -32,7 +32,7 @@
     </div>
     <div class="greytopbackground"></div>
       <div class="buttons-on-bottom">
-        <%= link_to "Trees", trees_path, class: "btn" %>
+        <%= link_to "Trees", categories_path, class: "btn" %>
         <%= link_to "Shipping & Returns", shiprate_path, class: "btn" %>
         <%= link_to "About Us", about_path, class: "btn" %>
       </div>

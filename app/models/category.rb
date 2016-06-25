@@ -1,3 +1,4 @@
 class Category < ActiveRecord::Base
-  has_many :trees  
+  has_many :trees
+  mount_uploader :image, ImageUploader
 end
