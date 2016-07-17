@@ -2,6 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.categorycard {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 0 0 1px #d1d1d1,0 0 4px 1px #ccc;
+}
+
+.categorycard :hover {
+  height: 500px;
+  width:400px;
+}
+
 .categoryindex {
   display: flex;
   justify-content: center;
@@ -11,14 +27,12 @@
   margin-top: 100px;
 }
 
-.category {
+.categorypicture {
   display: flex;
   justify-content: center;
   height: 300px;
   width: 300px;
-  margin: 10px;
   background-size: cover;
-      box-shadow: 0 0 0 1px #d1d1d1,0 0 4px 1px #ccc;
 }
 
 
@@ -27,4 +41,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 300px;
 }

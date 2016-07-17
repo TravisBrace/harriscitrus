@@ -4,9 +4,12 @@
 
 <div class="categoryindex">
     <% Category.all.each do |cat| %>
-      <div class="category" style="background-image: url(<%= cat.image_url.to_s %>)">
-
-        <h2><%= link_to cat.name.try(:html_safe), category_path(cat) %></h2>
+      <div class="categorycard">
+        <div class="categorypicture" style="background-image: url(<%= cat.image_url.to_s %>)">
+        </div>
+        <div class="name">
+          <h2><%= link_to cat.name.try(:html_safe), category_path(cat) %></h2>
+        </div>
       </div>
     <% end %>
 </div>
